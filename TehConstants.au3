@@ -5,6 +5,19 @@ Global Enum $RANGE_ADJACENT=156, $RANGE_NEARBY=240, $RANGE_AREA=312, $RANGE_EARS
 Global Enum $RANGE_ADJACENT_2=156^2, $RANGE_NEARBY_2=240^2, $RANGE_AREA_2=312^2, $RANGE_EARSHOT_2=1000^2, $RANGE_SPELLCAST_2=1085^2, $RANGE_SPIRIT_2=2500^2, $RANGE_COMPASS_2=5000^2
 Global Enum $instancetype_outpost, $instancetype_explorable, $instancetype_loading
 Global Enum $normal_mode, $hard_mode
+Global $farmable_events = [ _
+	"Canthan New Year", _
+	"Lucky Treats Week", _
+	"Sweet Treats Week", _
+	"Anniversary Celebration", _
+	"Dragon Festival", _
+	"Wintersday in July", _
+	"Wayfarer's Reverie", _
+	"Pirate Week", _
+	"Halloween", _
+	"Special Treats Week", _
+	"Wintersday" _
+]
 
 ; === Item rarity ===
 Global Const $rarity_green 					= 2627
@@ -66,16 +79,17 @@ Global Const $model_id_dye 					= 146
 Global Const $item_extraid_black_dye 		= 10
 Global Const $item_extraid_white_dye 		= 12
 ; Pcons
-Global Const $model_id_cupcake 				= 22269
+Global Const $model_id_four_leaf_clover 	= 22191
+Global Const $model_id_birthday_cupcake		= 22269
 Global Const $model_id_golden_egg 			= 22752
 Global Const $model_id_honeycomb 			= 26784
-Global Const $model_id_pumpkin_pie			= 28436
+Global Const $model_id_slice_of_pumpkin_pie	= 28436
 ; Alcohol
-Global Const $model_id_hunter_ale 			= 910
+Global Const $model_id_hunters_ale 			= 910
 Global Const $model_id_eggnog               = 6375
-Global Const $model_id_apple_cider			= 28435
-Global Const $model_id_grog 				= 30855
-Global Const $model_id_krytian_brandy 		= 35124
+Global Const $model_id_hard_apple_cider		= 28435
+Global Const $model_id_bottle_of_grog		= 30855
+Global Const $model_id_krytan_brandy 		= 35124
 ; Party
 Global Const $model_id_snowman_summoner     = 6376
 Global Const $model_id_bottle_rocket 		= 21809
@@ -139,12 +153,79 @@ Global Const $skill_id_dash 				= 1043
 Global Const $skill_id_zojuns_haste 		= 1196
 Global Const $skill_id_wastrels_demise 		= 1335
 
-; === UI ===
-;Global Const $EventItemTrackerOneName 		= "Wayfarer's Mark"
-;Global Const $EventItemTrackerTwoName 		= "Eggnog"
-;Global Const $EventItemTrackerThreeName 	= "Fruitcake"
-;Global Const $EventItemTrackerOneId 		= $model_id_wayfarers_mark
-;Global Const $EventItemTrackerTwoId 		= $model_id_eggnog
-;Global Const $EventItemTrackerThreeId 		= $model_id_fruitcake
-
+; === Tracker UI ===
+; 0
+Global $LockpickTrackerCount 				= 0
+Global $BlackDyeTrackerCount 				= 0
+Global $WhiteDyeTrackerCount 				= 0
+; 1
+Global $EventItemTrackerOneName
+Global $EventItemTrackerOneId
+Global $EventItemTrackerOneLabel
+Global $EventItemTrackerOneGlobalLabel
+Global $EventItemTrackerOneCount 			= 0
+Global $EventItemTrackerOneCountGlobal 		= 0
+; 2
+Global $EventItemTrackerTwoName
+Global $EventItemTrackerTwoId
+Global $EventItemTrackerTwoLabel
+Global $EventItemTrackerTwoGlobalLabel
+Global $EventItemTrackerTwoCount 			= 0
+Global $EventItemTrackerTwoCountGlobal 		= 0
+; 3
+Global $EventItemTrackerThreeName
+Global $EventItemTrackerThreeId
+Global $EventItemTrackerThreeLabel
+Global $EventItemTrackerThreeGlobalLabel
+Global $EventItemTrackerThreeCount 			= 0
+Global $EventItemTrackerThreeCountGlobal 	= 0
+; 4
+Global $EventItemTrackerFourName
+Global $EventItemTrackerFourId
+Global $EventItemTrackerFourLabel
+Global $EventItemTrackerFourGlobalLabel
+Global $EventItemTrackerFourCount 			= 0
+Global $EventItemTrackerFourCountGlobal 	= 0
+; 5
+Global $EventItemTrackerFiveName
+Global $EventItemTrackerFiveId
+Global $EventItemTrackerFiveLabel
+Global $EventItemTrackerFiveGlobalLabel
+Global $EventItemTrackerFiveCount 			= 0
+Global $EventItemTrackerFiveCountGlobal 	= 0
+; 6
+Global $EventItemTrackerSixName
+Global $EventItemTrackerSixId
+Global $EventItemTrackerSixLabel
+Global $EventItemTrackerSixGlobalLabel
+Global $EventItemTrackerSixCount 			= 0
+Global $EventItemTrackerSixCountGlobal 		= 0
+; 7
+Global $EventItemTrackerSevenName
+Global $EventItemTrackerSevenId
+Global $EventItemTrackerSevenLabel
+Global $EventItemTrackerSevenGlobalLabel
+Global $EventItemTrackerSevenCount 			= 0
+Global $EventItemTrackerSevenCountGlobal 	= 0
+; 8
+Global $EventItemTrackerEightName
+Global $EventItemTrackerEightId
+Global $EventItemTrackerEightLabel
+Global $EventItemTrackerEightGlobalLabel
+Global $EventItemTrackerEightCount 			= 0
+Global $EventItemTrackerEightCountGlobal 	= 0
+; 9
+Global $EventItemTrackerNineName
+Global $EventItemTrackerNineId
+Global $EventItemTrackerNineLabel
+Global $EventItemTrackerNineGlobalLabel
+Global $EventItemTrackerNineCount 			= 0
+Global $EventItemTrackerNineCountGlobal 	= 0
+; 10
+Global $EventItemTrackerTenName
+Global $EventItemTrackerTenId
+Global $EventItemTrackerTenLabel
+Global $EventItemTrackerTenGlobalLabel
+Global $EventItemTrackerTenCount 			= 0
+Global $EventItemTrackerTenCountGlobal 		= 0
 ; ================ END CONSTANTS ================
